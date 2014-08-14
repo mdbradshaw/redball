@@ -1,0 +1,38 @@
+<!doctypehtml>
+<html>
+	<head>
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script>
+	var hello;
+	hello =  new mygame;
+	function mygame () {
+		this.sayhello = function() {
+		console.log("hello");
+		};
+		this.addball = function() {
+			var game = $("#game");
+			game.append("<img id='redball.jpg'src='http://www.icstars.org/files/redball.jpg'/>")
+			var redball = new ball;
+			redball.cssid="redball";
+			redball.imgsrc="http://www.icstars.org/files/redball.jpg";
+			redball.debug();
+		};//end of add ball function
+	};//end of mygame class definition
+	function ball() {
+		var cssid;
+		var imgsrc;
+		this.debug = function () {
+			console.log("my id is "  + this.cssid);
+			console.log("my immage source is " + this.imgsrc );
+		};
+	};
+	</script>
+	</head>
+	<body>
+		<div id="game">
+	<button onclick="hello.sayhello()">say hello</button>
+
+	<button onclick="hello.addball()">watermelon</button>
+	</div>
+	</body>
+</html>
