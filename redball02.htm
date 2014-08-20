@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>redball01</title>
+        <script>
+            function sayhello(){alert("Let's do this, Just click the buttons");}function moveright(){redball.left=redball.left+30;}function moveleft(){redball.left=redball.left-30;}function moveup(){redball.top=redball.top-30;}function movedown(){redball.top=redball.top+30;}function movene(){redball.top=redball.top-30;redball.left=redball.left+30;}function movese(){redball.top=redball.top+30;redball.left=redball.left+30;}function movesw(){redball.top=redball.top+30;redball.left=redball.left-30;}function movenw(){redball.top=redball.top-30;redball.left=redball.left-30;}
+        </script>
+        <script src="http://lrn.icstars.org/redball.js"></script>
+    </head>
+    <body>
+        <button onclick="movenw();">north-west</button>
+        <button onclick="moveup();">north</button>
+        <button onclick="movene();">north-east</button>
+        <button onclick="moveleft();">west</button>
+        <button onclick="sayhello();">Instructions</button>
+        <img id="redball" src="redball.jpg"/>
+        <button onclick="moveright();">east</button>
+        <button onclick="movesw();">south-west</button>
+        <button onclick="movedown();">south</button>
+        <button onclick="movese();">south-east</button>
+    </body>
+</html>

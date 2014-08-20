@@ -1,0 +1,76 @@
+<!doctypehtml>
+<html>
+<head>
+	<style>
+	html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url(stars.jpg)
+}
+    #table {
+    border: 4px solid white;
+    position: absolute;
+    top:25px;
+    left: 1200px;
+    }
+
+    #red {
+	background-color: red;
+	border-color: orange;
+    box-shadow: 0 0 150px yellow;
+    }
+
+	.ball {
+	position: absolute;
+	height:200px;
+	width:200px;
+	border-radius: 100%;
+    border-width: 2px;
+    border-style: solid;
+}
+
+
+	</style>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$( document ).ready(function() {
+    	console.log( "ready!" );
+		$("#redball").fadeOut("slow");
+		$("#redball").fadeIn("fast");
+		$("#redball").animate({ "left": "+=400px" }, "slow");
+		$("#redball").animate({ "left": "-=400px" }, "slow");
+		});
+	</script>
+</head>
+<body>
+	 <table id="table">
+            <tr>
+                    <td><button id="movenw">&#8598;</button></td>
+                    <td><button id= "moveup">&#8593;</button></td>
+                    <td><button id= "movene">&#8599;</button></td>
+            </tr>
+            <tr>
+                    <td><button id="moveleft">&#8592;</button></td>
+                    <td><button id="sayhello">?</button></td>
+                    <td><button id="moveright">&#8594;</button></td>
+            </tr>
+            <tr>			
+                  	<td><button id="movesw">&#8601;</button></td>
+                    <td><button id="movedown">&#8595;</button></td>
+                    <td><button id="movese">&#8600;</button></td>
+			</tr>
+			<tr>			
+                    <td><button id="square">&#10065;</button></td>
+                    <td><button id="triangle">&#8710;</button></td>
+                    <td><button id="bounce">&#9736;</button></td>
+            </tr>
+            <tr>        
+                    <td><button id="octagon">&#9784;</button></td>
+                    <td><button> </button></td>
+                    <td><button id="criscross">X</button></td>
+			</tr>
+	<div class="ball"></div>
+	</div>
+</body>
+</html>

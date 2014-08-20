@@ -69,44 +69,56 @@
                     <td><button> </button></td>
                     <td><button id="criscross">X</button></td>
             			<script>
+//nw//
             				$("#movenw").click(function() {
 							$("#redball").animate({ "top": "-=30px", "left": "-=30px" }, "slow");
 							});
+//up//
             				$("#moveup").click(function() {
 							$("#redball").animate({ "top": "-=30px" }, "slow");
 							});
+//ne//
             				$("#movene").click(function() {
 							$("#redball").animate({ "top": "-=30px", "left": "+=30px" }, "slow");
 							});
+//left//
             				$("#moveleft").click(function() {
 							$("#redball").animate({ "left": "-=30px" }, "slow");
 							});
+//say hello//
 							$("#sayhello").click(function() {
  							alert( "It worked" );
    							 });
+//right//
             				$("#moveright").click(function() {
 							$("#redball").animate({ "left": "+=30px" }, "slow");
 							});
+//sw//
             				$("#movesw").click(function() {
 							$("#redball").animate({ "top": "+=30px", "left": "-=30px" }, "slow");
 							});
+//down//
             				$("#movedown").click(function() {
 							$("#redball").animate({ "top": "+=30px" }, "slow");
 							});
+//se//
             				$("#movese").click(function() {
 							$("#redball").animate({ "top": "+=30px", "left": "+=30px" }, "slow");
 							});
+//square//
             				$("#square").click(function() {
 							$("#redball").animate({ "left": "+=125px" }, "slow");
 							$("#redball").animate({ "top": "+=125px" }, "slow");
 							$("#redball").animate({ "left": "-=125px" }, "slow");
 							$("#redball").animate({ "top": "-=125px" }, "slow");
 							});
+//triangle//
             				$("#triangle").click(function() {
 							$("#redball").animate({ "top": "+=50px", "left": "+=50px" }, "slow");
 							$("#redball").animate({ "left": "-=100px" }, "slow");
 							$("#redball").animate({ "top": "-=50px", "left": "+=50px" }, "slow");
 							});
+//bounce//
             				$("#bounce").click(function() {
 							$("#redball").animate({ "left": "+=1100px" }, 200);
 							$("#redball").animate({ "top": "+=400px", "left": "-=400px" }, 300);
@@ -114,6 +126,7 @@
 							$("#redball").animate({ "top": "+=85px", "left": "-=440px" }, 800);
 							$("#redball").animate({ "left": "-=20px" }, 1000);
 							});
+//octagon//
             				$("#octagon").click(function() {
 							$("#redball").animate({ "left": "+=100px" }, "slow");
 							$("#redball").animate({ "top": "+=50px", "left": "+=50px" }, "slow");
@@ -124,6 +137,7 @@
 							$("#redball").animate({ "top": "-=100px" }, "slow");
 							$("#redball").animate({ "top": "-=50px", "left": "+=50px" }, "slow");
 							});
+//crisscross/
             				$("#criscross").click(function() {
 							$("#redball").animate({ "top": "+=200px", "left": "+=200px" }, "slow");
 							$("#redball").animate({ "top": "-=400px", "left": "-=400px" }, "slow");
@@ -135,12 +149,6 @@
 						</script>
 			</tr>
 	<div id="redball"></div>
-	<div id="vorbit">
-		<div id="orbit1"></div>
 	</div>
-	<div id="horbit">
-		<div id="orbit2"></div>
-	</div>
-
 </body>
 </html>
