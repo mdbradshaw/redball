@@ -89,6 +89,22 @@ $(document).ready (function(){
   var ballsFromJSON = server.getballs();
   for (i=0;i<ballsFromJSON.length;i++){
     thegame.addball(ballsFromJSON[i]);
+    $("#redball").fadeOut("slow");
+    $("#redball").fadeIn("fast");
+    $("#redball").animate({ "left": "+=400px" }, "slow");
+    $("#redball").animate({ "left": "-=400px" }, "slow");
+    $("#orangeball").fadeOut("slow");
+    $("#orangeball").fadeIn("fast");
+    $("#orangeball").animate({ "left": "-=400px" }, "slow");
+    $("#orangeball").animate({ "left": "+=400px" }, "slow");
+    $("#pinkball").fadeOut("slow");
+    $("#pinkball").fadeIn("fast");
+    $("#pinkball").animate({ "left": "+=400px" }, "slow");
+    $("#pinkball").animate({ "left": "-=400px" }, "slow");
+    $("#greenball").fadeOut("slow");
+    $("#greenball").fadeIn("fast");
+    $("#greenball").animate({ "left": "-=400px" }, "slow");
+    $("#greenball").animate({ "left": "+=400px" }, "slow");
   }
   
 });
